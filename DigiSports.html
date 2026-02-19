@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digi Sport Romania - En Directo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: #e50000;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    header p {
+      color: #aaa;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      width: 100%;
+      max-width: 960px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #1a1a1a, #222);
+      border: 1px solid #333;
+      border-radius: 14px;
+      padding: 30px 20px;
+      text-align: center;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #e50000;
+      box-shadow: 0 8px 24px rgba(229, 0, 0, 0.3);
+    }
+
+    .card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 14px;
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      color: #e50000;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+      color: #999;
+    }
+
+    footer {
+      margin-top: 50px;
+      color: #555;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📺 Digi Sport Romania</h1>
+    <p>Canales en directo — RDSLive</p>
+  </header>
+
+  <div class="grid">
+
+    <a class="card" href="https://rdslive.tv/canal/digisport-1/" target="_blank" rel="noopener">
+      <div class="icon">🔴</div>
+      <h2>Digi Sport 1</h2>
+      <p>Ver canal en directo</p>
+    </a>
+
+    <a class="card" href="https://rdslive.tv/canal/digisport-2/" target="_blank" rel="noopener">
+      <div class="icon">🔴</div>
+      <h2>Digi Sport 2</h2>
+      <p>Ver canal en directo</p>
+    </a>
+
+    <a class="card" href="https://rdslive.tv/canal/digisport-3/" target="_blank" rel="noopener">
+      <div class="icon">🔴</div>
+      <h2>Digi Sport 3</h2>
+      <p>Ver canal en directo</p>
+    </a>
+
+    <a class="card" href="https://rdslive.tv/canal/digisport-4/" target="_blank" rel="noopener">
+      <div class="icon">🔴</div>
+      <h2>Digi Sport 4</h2>
+      <p>Ver canal en directo</p>
+    </a>
+
+  </div>
+
+  <footer>
+    <p>Los canales se abren en una nueva pestaña &bull; Fuente: rdslive.tv</p>
+  </footer>
+
+</body>
+</html>
